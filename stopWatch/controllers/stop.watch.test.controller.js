@@ -6,8 +6,8 @@
 
     angular
         .module('myApp')
-        .controller('mainController', mainController);
-    mainController.$inject = ['$scope'];
+        .controller('stopWatchTestController', stopWatchTestController);
+    stopWatchTestController.$inject = ['$scope'];
 
     /* @ngInject */
     function mainController($scope) {

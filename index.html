@@ -12,7 +12,7 @@
     <script src="stopWatch/directives/stopWatch/stop.watch.directive.js"></script>
     <script src="stopWatch/directives/stopWatch/stop.watch.time.filter.js"></script>
 
-    <script src="stopWatch/controllers/main.controller.js"></script>
+    <script src="stopWatch/controllers/stop.watch.test.controller.js"></script>
 
     <title>Title</title>
 </head>
@@ -20,12 +20,11 @@
 <body ng-app="myApp">
 
 <!-- stop watch -->
-<div ng-controller="mainController as ctrl">
+<div ng-controller="stopWatchTestController as ctrl">
     <input ng-model="ctrl.interval" type="number"/> ms
     <br>
     <stop-watch interval="ctrl.interval"></stop-watch>
 </div>
-
 
 
 </body>
