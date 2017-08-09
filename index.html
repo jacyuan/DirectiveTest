@@ -12,7 +12,11 @@
     <script src="stopWatch/directives/stopWatch/stop.watch.directive.js"></script>
     <script src="stopWatch/directives/stopWatch/stop.watch.time.filter.js"></script>
 
-    <script src="stopWatch/controllers/stop.watch.test.controller.js"></script>
+    <script src="stopWatch/stop.watch.test.controller.js"></script>
+
+    <script src="transcludeTest/superComponent/directive/super.component.module.js"></script>
+    <script src="transcludeTest/superComponent/directive/super.component.directive.js"></script>
+    <script src="transcludeTest/superComponent/super.component.test.controller.js"></script>
 
     <title>Title</title>
 </head>
@@ -21,6 +25,9 @@
 
 <!-- stop watch -->
 <div ng-include="'stopWatch/stop.watch.html'"></div>
+
+<!-- super component -->
+<div ng-include="'transcludeTest/superComponent/super.component.html'"></div>
 
 
 </body>
