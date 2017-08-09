@@ -2,6 +2,7 @@
     'use strict';
     angular.module('myApp', [
         'stopWatch',
-        'superComponentModule'
+        'superComponentModule',
+        'superComponentRepeatedModule'
     ]);
 })();

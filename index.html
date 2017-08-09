@@ -11,12 +11,15 @@
     <script src="stopWatch/directives/stopWatch/stop.watch.module.js"></script>
     <script src="stopWatch/directives/stopWatch/stop.watch.directive.js"></script>
     <script src="stopWatch/directives/stopWatch/stop.watch.time.filter.js"></script>
-
     <script src="stopWatch/stop.watch.test.controller.js"></script>
 
-    <script src="transcludeTest/superComponent/directive/super.component.module.js"></script>
-    <script src="transcludeTest/superComponent/directive/super.component.directive.js"></script>
+    <script src="transcludeTest/superComponent/super.component.module.js"></script>
+    <script src="transcludeTest/superComponent/super.component.directive.js"></script>
     <script src="transcludeTest/superComponent/super.component.test.controller.js"></script>
+
+    <script src="transcludeTest/superComponentRepeatedVersion/super.component.repeated.module.js"></script>
+    <script src="transcludeTest/superComponentRepeatedVersion/super.component.repeated.test.controller.js"></script>
+    <script src="transcludeTest/superComponentRepeatedVersion/super.component.repeated.directive.js"></script>
 
     <title>Title</title>
 </head>
@@ -25,9 +28,14 @@
 
 <!-- stop watch -->
 <div ng-include="'stopWatch/stop.watch.html'"></div>
+<br>
 
-<!-- super component -->
+<!-- super component : simple transclude case -->
 <div ng-include="'transcludeTest/superComponent/super.component.html'"></div>
+<br>
+
+<!-- super component : with ng-repeat and use transcludeFn for optimization -->
+<div ng-include="'transcludeTest/superComponentRepeatedVersion/super.component.repeated.html'"></div>
 
 
 </body>
