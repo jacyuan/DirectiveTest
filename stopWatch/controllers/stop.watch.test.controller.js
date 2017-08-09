@@ -10,7 +10,7 @@
     stopWatchTestController.$inject = ['$scope'];
 
     /* @ngInject */
-    function mainController($scope) {
+    function stopWatchTestController($scope) {
 
         var vm = this;
 

@@ -20,11 +20,7 @@
 <body ng-app="myApp">
 
 <!-- stop watch -->
-<div ng-controller="stopWatchTestController as ctrl">
-    <input ng-model="ctrl.interval" type="number"/> ms
-    <br>
-    <stop-watch interval="ctrl.interval"></stop-watch>
-</div>
+<div ng-include="'stopWatch/stop.watch.html'"></div>
 
 
 </body>
