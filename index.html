@@ -8,19 +8,25 @@
     <script src="myApp.module.js"></script>
     <script src="templates.run.js"></script>
 
-    <script src="./directives/stopWatch/stop.watch.module.js"></script>
-    <script src="./directives/stopWatch/stop.watch.directive.js"></script>
-    <script src="./directives/stopWatch/stop.watch.time.filter.js"></script>
+    <script src="stopWatch/directives/stopWatch/stop.watch.module.js"></script>
+    <script src="stopWatch/directives/stopWatch/stop.watch.directive.js"></script>
+    <script src="stopWatch/directives/stopWatch/stop.watch.time.filter.js"></script>
 
-    <script src="./controllers/main.controller.js"></script>
+    <script src="stopWatch/controllers/main.controller.js"></script>
 
     <title>Title</title>
 </head>
+
 <body ng-app="myApp">
+
+<!-- stop watch -->
 <div ng-controller="mainController as ctrl">
     <input ng-model="ctrl.interval" type="number"/> ms
     <br>
     <stop-watch interval="ctrl.interval"></stop-watch>
 </div>
+
+
+
 </body>
 </html>
